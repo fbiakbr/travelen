@@ -1,0 +1,158 @@
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #F73859;
+  height: 80px;
+  width: 100%;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 4px;
+}
+
+nav ul li a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  padding: 8px 14px;
+  text-transform: uppercase;
+}
+
+.nav-btn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#nav {
+  display: none;
+}
+
+.travelen {
+  color: #fff;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+a.active,
+a:hover {
+  color: #fff;
+  trasition: 0.5s;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4% 6%;
+}
+
+.row .column-1 {
+    padding-right: 50px
+}
+
+.column-1 h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.column-1 p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.btn-start {
+    width: 160px;
+    height: 44px;
+    background-color: #F73859;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+@media (max-width: 952px) {
+    .travelen {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  .adventure {
+    width: 300px
+  }
+}
+
+@media (max-width: 858px) {
+  .nav-btn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #384259;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+  }
+  #nav:checked ~ ul {
+    left: 0;
+  }
+  .row {
+      flex-direction: column;
+  }
+  .row .column-1 {
+      padding: 30px;
+      margin-top: -20px;
+  }
+  .row .column-2 {
+      padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-start {
+      width: 100%;
+  }
+  .row .column-1 p {
+    margin-top: -16px;
+}
+}
