@@ -8,7 +8,7 @@
 }
 
 nav {
-  background-color: #F73859;
+  background-color: #17A8B6;
   height: 80px;
   width: 100%;
 }
@@ -60,50 +60,111 @@ a:hover {
 }
 
 .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 4% 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4% 6%;
 }
 
 .row .column-1 {
-    padding-right: 50px
+  padding-right: 50px;
 }
 
 .column-1 h1 {
-    font-size: 40px;
-    margin-bottom: 20px;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .column-1 p {
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 20px;
 }
 
 .btn-start {
-    width: 160px;
-    height: 44px;
-    background-color: #F73859;
-    border: none;
-    color: #fff;
-    font-size: 16px;
-    text-transform: uppercase;
-    cursor: pointer;
-    border-radius: 25px;
+  width: 160px;
+  height: 44px;
+  background-color: #17A8B6;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.btn-start:hover {
+  background-color: #fff;
+  color: #17A8B6;
+  transition: 0.5s;
+  border: 1px solid #17A8B6;
+}
+
+.btn-start-outline {
+  width: 160px;
+  height: 44px;
+  background-color: #fff;
+  border: 1px solid #17A8B6;
+  color: #17A8B6;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.btn-start-outline:hover {
+  background-color: #17A8B6;
+  color: #fff;
+  transition: 0.5s;
+}
+
+#about {
+  background: url('../img/beach.png') no-repeat left;
+  background-size: 55%;
+  background-color: #fff;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+.i-container {
+  width: 55%;
+  float: right;
+  background-color: #fff;
+  padding: 150px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.i-container h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.text {
+  font-size: 13px;
+  color: #545454;
+  line-height: 30px;
+  text-align: left;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 952px) {
-    .travelen {
+  .travelen {
     font-size: 30px;
     padding-left: 50px;
   }
   nav ul li a {
     font-size: 16px;
   }
-
   .adventure {
-    width: 300px
+    width: 300px;
+  }
+  #about {
+    background-size: 100%;
+    padding: 100px 40px;
+  }
+  .i-container {
+    width: 100%;
   }
 }
 
@@ -137,22 +198,28 @@ a:hover {
     left: 0;
   }
   .row {
-      flex-direction: column;
+    flex-direction: column;
   }
   .row .column-1 {
-      padding: 30px;
-      margin-top: -20px;
+    padding: 30px;
+    margin-top: -20px;
   }
   .row .column-2 {
-      padding: 20px;
+    padding: 20px;
+  }
+  #about {
+    padding: 0;
+  }
+  .i-container {
+    padding: 60px;
   }
 }
 
 @media (max-width: 480px) {
   .btn-start {
-      width: 100%;
+    width: 100%;
   }
   .row .column-1 p {
     margin-top: -16px;
-}
+  }
 }
