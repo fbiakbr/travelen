@@ -30,7 +30,7 @@
         <ul>
           <li><a class="active" href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="">Services</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="">Team</a></li>
           <li><a href="">Contact</a></li>
         </ul>
@@ -39,39 +39,90 @@
 
     <!-- Main -->
     <main>
-      <!-- Home -->
-      <article id="home">
-        <div class="row">
-          <div class="column-1" id="first">
-            <h1>Travelen</h1>
+      <div id="content">
+        <!-- Home -->
+        <article id="home">
+          <div class="row">
+            <div class="column-1" id="comp-1">
+              <h1>Travelen</h1>
+              <p class="text">
+                Make your travel experience more enjoyable and memorable. We are
+                a team of travel experts who are passionate about travel. We are
+                here to help you find the best travel deals.
+              </p>
+              <a href=""><button class="btn-start">Get Started</button></a>
+            </div>
+            <div class="column-2" id="comp-2">
+              <img
+                class="adventure"
+                src="assets/img/travel.svg"
+                width="500px"
+              />
+            </div>
+          </div>
+        </article>
+        <!-- About -->
+        <article id="about">
+          <div class="i-container">
+            <h1>About Travelen</h1>
             <p class="text">
-              Make your travel experience more enjoyable and memorable. We are a
-              team of travel experts who are passionate about travel. We are
-              here to help you find the best travel deals.
+              Travelen is a travel agent serves Indonesian domestic and
+              international flight reservation and ticketing. Along with
+              ticketing services, Travelen is a tour operator serving all the
+              tourism need such as tour packages, transportation, hotel info and
+              more.
             </p>
-            <a href=""><button class="btn-start">Get Started</button></a>
+            <a href=""
+              ><button class="btn-start">
+                Services <i class="fas fa-arrow-right"></i></button
+            ></a>
           </div>
-          <div class="column-2" id="sec">
-            <img class="adventure" src="assets/img/travel.svg" width="500px" />
+        </article>
+        <!-- Services -->
+        <article id="services">
+          <div class="services-row">
+            <h1>Services</h1>
+            <hr>
           </div>
-        </div>
-      </article>
-      <!-- About -->
-      <article id="about">
-        <div class="i-container">
-          <h1>About Travelen</h1>
-          <p class="text">
-            Travelen is a travel agent serves Indonesian domestic and
-            international flight reservation and ticketing. Along with ticketing
-            services, Travelen is a tour operator serving all the tourism need
-            such as tour packages, transportation, hotel info and more.
-          </p>
-          <a href=""
-            ><button class="btn-start">
-              Services <i class="fas fa-arrow-right"></i></button
-          ></a>
-        </div>
-      </article>
+          <div class="services-row">
+            <!-- Card 1 -->
+            <div class="card-column">
+              <div class="card">
+                <div class="card-icon">
+                  <i class="fas fa-plane-arrival"></i>
+                </div>
+                <h3>Travel Management</h3>
+                <p>
+                  We can help you to plan your travel and make it a fun and memorable experience.
+                </p>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card-column">
+              <div class="card">
+                <div class="card-icon">
+                  <i class="fas fa-lock"></i>
+                </div>
+                <h3>Fast & Secure</h3>
+                <p>
+                  Trusted by millions of travelers around the world, we are the best travel agent in Indonesia.
+                </p>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card-column">
+              <div class="card">
+                <div class="card-icon">
+                  <i class="fas fa-headphones"></i>
+                </div>
+                <h3>Quick Support</h3>
+                <p>
+                  Get 24/7 customer service support. We are here to help you find the best travel deals.
+                </p>
+              </div>
+            </div>
+        </article>
+      </div>
     </main>
 
     <!-- Script -->
