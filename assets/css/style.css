@@ -253,10 +253,10 @@ a:hover {
 }
 
 .contact-container {
-  width: 85%;
+  width: 70%;
   background: #fff;
-  border-radius: 6px;
-  padding: 40px 60px 40px 40px;
+  border-radius: 20px;
+  padding: 40px 80px 40px 40px;
   border: 1px solid #17a8b6;
 }
 
