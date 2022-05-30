@@ -241,6 +241,89 @@ a:hover {
   font-size: 14px;
 }
 
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-container {
+  width: 85%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 40px 60px 40px 40px;
+  border: 1px solid #17a8b6;
+}
+
+.contact-container .contact{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact {
+  font-size: 30px;
+  color: #17a8b6;
+}
+
+.left {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+
+.left .title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #17a8b6;
+}
+
+.left .text {
+  font-size: 16px;
+}
+
+.right {
+  width: 75%;
+  margin-left: 75px;
+}
+
+.contact-title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #17a8b6;
+}
+
+.input {
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+
+.input input, .input textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+
+.input textarea {
+  padding-top: 12px;
+}
+
+.message {
+  min-height: 100px;
+}
+
 @media (min-width: 952px) {
   .card-column {
     padding: 4%;
@@ -266,6 +349,14 @@ a:hover {
   }
   .i-container {
     width: 100%;
+  }
+  .contact-container {
+    width: 90%;
+    padding: 30px 40px 40px 35px ;
+  }
+  .right {
+    width: 75%;
+   margin-left: 55px;
   }
 }
 
@@ -314,6 +405,28 @@ a:hover {
   .i-container {
     padding: 60px;
   }
+  
+  .contact-container {
+    margin: 40px 0;
+    height: 100%;
+  }
+  .contact {
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+  }
+  .right {
+    width: 100%;
+   margin-left: 0;
+  }
+  .phone {
+    margin-right: 80px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -322,5 +435,23 @@ a:hover {
   }
   .row .column-1 p {
     margin-top: -16px;
+  }
+  .contact-container {
+    margin: 40px 0;
+    height: 100%;
+  }
+  .contact {
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+  }
+  .right {
+    width: 100%;
+   margin-left: 0;
   }
 }
