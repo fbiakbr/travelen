@@ -316,6 +316,7 @@ a:hover {
 
 .input textarea {
   padding-top: 12px;
+  margin-top: 4px;
 }
 
 .message {
