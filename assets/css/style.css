@@ -155,7 +155,7 @@ a:hover {
 }
 
 #services {
-  margin-bottom: 50px;
+  padding: 100px 0;
 }
 
 .services-row {
@@ -175,7 +175,10 @@ a:hover {
   margin: 0 auto;
   border: 0;
   border-top: 3px solid #17a8b6;
-  padding-bottom: 10px;
+}
+
+#team {
+  padding: 100px 0;
 }
 
 .team-row {
@@ -266,29 +269,8 @@ a:hover {
   color: #17a8b6;
 }
 
-.left {
-  width: 25%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 15px;
-  position: relative;
-}
-
-.left .title {
-  font-size: 20px;
-  font-weight: bold;
-  color: #17a8b6;
-}
-
-.left .text {
-  font-size: 16px;
-}
-
-.right {
-  width: 75%;
+.ccard {
+  width: 86%;
   margin-left: 75px;
 }
 
@@ -324,6 +306,21 @@ a:hover {
   min-height: 100px;
 }
 
+footer {
+  background-color: #17a8b6;
+  padding: 24px 0;
+  margin-top: 100px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer span {
+  color: #384259;
+  font-weight: 600;
+
+}
+
 @media (min-width: 952px) {
   .card-column {
     padding: 4%;
@@ -354,7 +351,7 @@ a:hover {
     width: 90%;
     padding: 30px 40px 40px 35px ;
   }
-  .right {
+  .ccard {
     width: 75%;
    margin-left: 55px;
   }
@@ -405,7 +402,6 @@ a:hover {
   .i-container {
     padding: 60px;
   }
-  
   .contact-container {
     margin: 40px 0;
     height: 100%;
@@ -413,19 +409,15 @@ a:hover {
   .contact {
     flex-direction: column;
   }
-  .left {
-    width: 100%;
-   flex-direction: row;
-   margin-top: 40px;
-   justify-content: center;
-   flex-wrap: wrap;
-  }
-  .right {
+  .ccard {
     width: 100%;
    margin-left: 0;
   }
   .phone {
     margin-right: 80px;
+  }
+  .footer-container {
+    margin: 30px 30px 24px 35px ;
   }
 }
 
@@ -443,14 +435,7 @@ a:hover {
   .contact {
     flex-direction: column;
   }
-  .left {
-    width: 100%;
-   flex-direction: row;
-   margin-top: 40px;
-   justify-content: center;
-   flex-wrap: wrap;
-  }
-  .right {
+  .ccard {
     width: 100%;
    margin-left: 0;
   }
