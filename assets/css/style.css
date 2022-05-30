@@ -5,6 +5,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -248,6 +249,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 100px 0;
 }
 
 .contact-container {
@@ -278,6 +280,7 @@ a:hover {
   font-size: 26px;
   font-weight: 600;
   color: #17a8b6;
+  margin-bottom: 16px;
 }
 
 .input {
@@ -318,7 +321,6 @@ footer {
 .footer span {
   color: #384259;
   font-weight: 600;
-
 }
 
 @media (min-width: 952px) {
