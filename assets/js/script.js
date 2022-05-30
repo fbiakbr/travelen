@@ -18,4 +18,26 @@ for (var i = 0; i < nav.length; i++) {
     });
 }
 
+// Input web app URL
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyYmFYrphIuqXb4OzThDAr3sd5JMFw-swhi0vLuIyiGBNLvb8Byb_BsAEL4o8sa_6p-dA/exec'
+const form = document.forms['travelen-form']
+const btnSend = document.querySelector('.btn-send')
+const btnLoading = document.querySelector('.btn-loading')
+const alert = document.querySelector('.alert')
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    btnLoading.classList.toggle('null')
+    btnSend.classList.toggle('null')
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+            btnLoading.classList.toggle('null')
+            btnSend.classList.toggle('null')
+            alert.classList.toggle('null')
+            form.reset()
+            console.log('Success!', response)
+        })
+        .catch(error => console.error('Error!', error.message))
+})
+
 swapElementsMobile('comp1', 'comp2');

@@ -185,17 +185,24 @@
               <p class="text">
                 If you have any questions, please do not hesitate to contact us. <br>We will reply you as soon as possible. <br>Thank you.
               </p>
-              <form action="#">
+              <div class="alert null">
+                <p>
+                  <i class="fas fa-smile"></i> Thank you! Your message has been sent.
+                  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                </p>
+              </div>
+              <form name="travelen-form">
                 <div class="input">
-                  <input type="text" placeholder="Enter your name">
+                  <input type="text" name="name" placeholder="Enter your name" required>
                 </div>
                 <div class="input">
-                  <input type="text" placeholder="Enter your email">
+                  <input type="tel" name="email" placeholder="Enter your email" required>
                 </div>
                 <div class="input message">
-                  <textarea cols="30" placeholder="Enter your message"></textarea>
+                  <textarea cols="30" name="messages" placeholder="Enter your messages" required></textarea>
                 </div>
-                <a href=""><button class="btn-start">Send Message</button></a>
+                <button type="submit" class="btn-start btn-send">Send Message</button>
+                <button class="btn-loading null" disabled><i class="fas fa-spinner fa-spin"></i> Loading...</button>
               </form>
             </div>
           </div>

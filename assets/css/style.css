@@ -125,6 +125,18 @@ a:hover {
   transition: 0.5s;
 }
 
+.btn-loading {
+  width: 160px;
+  height: 44px;
+  background-color: #88b1b5;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
 #about {
   background: url("../img/beach.png") no-repeat left;
   background-size: 55%;
@@ -260,7 +272,7 @@ a:hover {
   border: 1px solid #17a8b6;
 }
 
-.contact-container .contact{
+.contact-container .contact {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -289,13 +301,14 @@ a:hover {
   margin: 12px 0;
 }
 
-.input input, .input textarea {
+.input input,
+.input textarea {
   height: 100%;
   width: 100%;
   border: none;
   outline: none;
   font-size: 16px;
-  background: #F0F1F8;
+  background: #f0f1f8;
   border-radius: 6px;
   padding: 0 15px;
   resize: none;
@@ -321,6 +334,31 @@ footer {
 .footer span {
   color: #384259;
   font-weight: 600;
+}
+
+.null {
+  display: none;
+}
+
+.alert {
+  background-color: #17a8b6;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.alert p {
+  font-size: 16px;
+  margin: 0;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: #fff;
+  float: right;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 @media (min-width: 952px) {
@@ -351,11 +389,11 @@ footer {
   }
   .contact-container {
     width: 90%;
-    padding: 30px 40px 40px 35px ;
+    padding: 30px 40px 40px 35px;
   }
   .ccard {
     width: 75%;
-   margin-left: 55px;
+    margin-left: 55px;
   }
 }
 
@@ -413,19 +451,29 @@ footer {
   }
   .ccard {
     width: 100%;
-   margin-left: 0;
+    margin-left: 0;
   }
   .phone {
     margin-right: 80px;
   }
   .footer-container {
-    margin: 30px 30px 24px 35px ;
+    margin: 30px 30px 24px 35px;
   }
 }
 
 @media (max-width: 480px) {
   .btn-start {
     width: 100%;
+  }
+  .btn-loading {
+    width: 100%;
+    background-color: #88b1b5;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 25px;
   }
   .row .column-1 p {
     margin-top: -16px;
@@ -439,6 +487,6 @@ footer {
   }
   .ccard {
     width: 100%;
-   margin-left: 0;
+    margin-left: 0;
   }
 }
