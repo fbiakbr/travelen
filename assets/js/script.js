@@ -18,7 +18,7 @@ for (var i = 0; i < nav.length; i++) {
     });
 }
 
-// Input web app URL
+// Contact form validation and submission to Google Sheet with button animation and alert message
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyYmFYrphIuqXb4OzThDAr3sd5JMFw-swhi0vLuIyiGBNLvb8Byb_BsAEL4o8sa_6p-dA/exec'
 const form = document.forms['travelen-form']
 const btnSend = document.querySelector('.btn-send')
